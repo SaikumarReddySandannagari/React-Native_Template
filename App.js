@@ -1,19 +1,25 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, ScrollView, FlatList} from 'react-native';
+import Cardcomponent from './components/Cards' 
+import Header from './components/Header'
+import {Content, Container } from 'native-base';
+import { Icon } from 'react-native-elements'
+import Feed from './components/Feed'
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+    <View>
+    <View>
+      <Header/>
+    </View>
+    <Feed/>
     </View>
   );
 }
 
-const styles = StyleSheet.create({
+const Styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
   },
 });
